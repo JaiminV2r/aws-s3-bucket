@@ -1,0 +1,19 @@
+{
+  "name": "aws-s3-bucket",
+  "version": "1.0.0",
+  "description": "This repository contains Node.js implementations for uploading files to AWS S3 Bucket. It includes examples for both normal file uploads and multipart file uploads or manage file deletions, providing a comprehensive guide for efficiently handling file uploads to S3 Bucket.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.620.0",
+    "aws-sdk": "^2.1664.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
