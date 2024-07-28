@@ -9,7 +9,7 @@ This repository contains Node.js implementations for uploading files to AWS S3 B
 - Delete a file from `AWS S3 Bucket`
 - Delete multiple files from `AWS S3 Bucket`
 
-## Technologies Used
+## Packages Used
 
 - `@aws-sdk/client-s3`
 - `aws-sdk`
