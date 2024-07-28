@@ -17,6 +17,14 @@ const s3 = new AWS.S3({
   },
 });
 
+/** Set the credentials in S3Client */
+const s3Client = new S3Client({
+  credentials: {
+    accessKeyId: config.aws.access_key_id, // Enter your aws user's accessKeyId
+    secretAccessKey: config.aws.secret_access_key, // Enter your aws user's secretAccessKey
+  },
+});
+
 /**
  * Save file in s3 bucket
  * @param {Object} params
@@ -46,13 +54,6 @@ exports.s3Upload = async (params) =>
  * @param {string} params.Body Send file's buffer.
  */
 exports.s3UploadMultiPart = async (params) => {
-  /** Set the credentials */
-  const s3Client = new S3Client({
-    credentials: {
-      accessKeyId: config.aws.access_key_id,
-      secretAccessKey: config.aws.secret_access_key,
-    },
-  });
   let uploadId;
   try {
     /** Run CreateMultipartUploadCommand for get UploadId and start uploading by UploadId. */
