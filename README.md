@@ -1,4 +1,4 @@
-# aws-s3-bucket
+# aws-s3-bucket-js-v2
 
 This repository contains Node.js implementations for uploading files to AWS S3 Bucket. It includes examples for both normal file uploads and multipart file uploads or manage file deletions, providing a comprehensive guide for efficiently handling file uploads to S3 Bucket.
 
@@ -36,13 +36,13 @@ This repository contains Node.js implementations for uploading files to AWS S3 B
 1. Clone the repository:
 
    ```sh
-   https://github.com/JaiminV2r/aws-s3-bucket.git
+   https://github.com/JaiminV2r/aws-s3-bucket-js-v2.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd aws-s3-bucket
+   cd aws-s3-bucket-js-v2
    ```
 
 3. Install dependencies:
